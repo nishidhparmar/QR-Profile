@@ -1,0 +1,29 @@
+<div class="jumbotron text-center" style="background-color: black;color: white;border-radius: 0%;">
+  <h1 class="display-4">NISHIDH PARMAR</h1>
+  <hr class="my-4">
+  <h3> QR Profile</h3>
+  <!-- <img src="../assets/img/DSC_56753-min.jpg" width="100px" alt="" srcset=""> -->
+</div>
+<div class="container" style="width: 50%;">
+  <div class="row text-center justify-content-around align-items-center">
+    <div class="col-12 col-md-4 mt-5 mt-md-0">
+      <ngx-qrcode [elementType]="elementType" [value]="github" cssClass="aclass" errorCorrectionLevel="L">
+      </ngx-qrcode>
+      <h4>Github</h4>
+    </div>
+    <div class="col-12 col-md-4 mt-5 mt-md-0">
+      <ngx-qrcode [elementType]="elementType" [value]="linkdin" cssClass="aclass" errorCorrectionLevel="L">
+      </ngx-qrcode>
+      <h4>linkedin</h4>
+    </div>
+    <div class="col-12 col-md-4 mt-5 mt-md-0 mb-5 mb-md-0">
+      <ngx-qrcode [elementType]="elementType" [value]="resume" cssClass="aclass" errorCorrectionLevel="L">
+      </ngx-qrcode>
+      <h4>Resume</h4>
+    </div>
+
+  </div>
+
+</div>
+
+<router-outlet></router-outlet>
